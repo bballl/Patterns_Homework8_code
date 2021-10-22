@@ -15,10 +15,17 @@ namespace Asteroids
         {
             _shipData = new ShipData();
 
+            Debug.Log(_shipData.Attack);
+            Debug.Log(_shipData.CurrentDefense);
+            Debug.Log("----------------");
+
             var root = new ShipModifier(_shipData);
             root.Add(new AddAttackModifier(_shipData));
             root.Add(new AddDefenseModifier(_shipData));
             root.Handle();
+
+            Debug.Log(_shipData.Attack);
+            Debug.Log(_shipData.CurrentDefense);
         }
     }
 }
