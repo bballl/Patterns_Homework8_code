@@ -2,11 +2,11 @@
 
 namespace BehavioralPatterns.State.ExampleFirst
 {
-    public sealed class Context
+    public sealed class Player
     {
         private State _state;
 
-        public Context(State state)
+        public Player(State state)
         {
             State = state;
         }

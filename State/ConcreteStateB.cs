@@ -2,7 +2,7 @@
 {
     public sealed class ConcreteStateB : State
     {
-        public override void Handle(Context context)
+        public override void Handle(Player context)
         {
             context.State = new ConcreteStateA();
         }
